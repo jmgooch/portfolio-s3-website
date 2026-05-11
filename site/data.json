@@ -69,7 +69,7 @@
           "name": "HA Nginx Fargate Cluster",
           "description": "Project containing Terraform code for simple High Availability Nginx Fargate cluster.",
           "link": "https://github.com/jmgooch/fargate-nginx-terraform-portfolio-demo"
-        }
+        },
         {
           "name": "Cloudfront and S3 based website",
           "description": "Terraform code for this very website.",
@@ -155,7 +155,7 @@
           "name": "HA Nginx Fargate Cluster",
           "description": "シンプルな高可用性Nginx Fargateクラスター用のTerraformコードを含むプロジェクト。",
           "link": "https://github.com/jmgooch/fargate-nginx-terraform-portfolio-demo"
-        }
+        },
         {
           "name": "Cloudfront and S3 based website",
           "description": "このウェブサイト自体のTerraformコード。",

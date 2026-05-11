@@ -16,7 +16,7 @@
     },
     "about": {
       "title": "About Me",
-      "content": "Currently working as an Infrastructure Engineer at Randstad. I am a Linux System Engineer of around 10 years, with experience building and managing infrastructure in AWS and GCP "
+      "content": "Currently working as an Infrastructure Engineer at Randstad. I am a Kyoto based Linux System Engineer of around 10 years, with experience building and managing infrastructure in AWS and GCP. This site is showcase of my Terraform infrastructure projects, and collected place for contact information."
     },
     "experience": {
       "title": "Work History",
@@ -27,8 +27,8 @@
           "url": "https://www.randstad.co.jp/",
           "date": "Mar 2024 - Present",
           "highlights": [
-            "Developed and maintained core features of the flagship product.",
-            "Collaborated with design teams to improve user experience and accessibility."
+            "Handled infrastructure build and configuration for GCP-based Vertex AI PoC Lab.",
+            "Spearheaded cost reduction initiatives in AWS environment to reduce monthly billing by 25%."
           ]
         },
         {
@@ -37,17 +37,27 @@
           "url": "https://www.jisc.ac.uk/",
           "date": "August 2019 - August 2022",
           "highlights": [
-            "Developed and maintained core features of the flagship product.",
-            "Collaborated with design teams to improve user experience and accessibility."
+            "Negotiated vendor purchases and contracts on behalf of UK universities.",
+            "Worked with Terraform and Progress Chef to build self-service platform for infra stack deployment."
           ]
         },
-                {
+        {
           "role": "3rd Line Support Engineer",
           "company": "Eagle Eye Solutions",
           "url": "https://eagleeye.com/",
           "date": "August 2017 - March 2019",
           "highlights": [
-            "TODO"
+            "Built automated monthly reporting extraction from RDS and self-hosted database sources.",
+            "Handled technical remediations and pentest scheduling for companies PCI accreditation."
+          ]
+        },
+        {
+          "role": "IT Security Specialist",
+          "company": "Westpoint Ltd.",
+          "date": "September 2014 - May 2017",
+          "highlights": [
+            "Graduate role in small but skilled team of penetration testing specialists.",
+            "Built a solid foundation in both Linux and security concepts on the whole."
           ]
         }
       ]
@@ -57,14 +67,19 @@
       "list": [
         {
           "name": "HA Nginx Fargate Cluster",
-          "description": "A high-performance analytics dashboard built to monitor AWS infrastructure.",
-          "link": "https://github.com/jmgooch/project-one"
+          "description": "Project containing Terraform code for simple High Availability Nginx Fargate cluster.",
+          "link": "https://github.com/jmgooch/fargate-nginx-terraform-portfolio-demo"
+        }
+        {
+          "name": "Cloudfront and S3 based website",
+          "description": "Terraform code for this very website.",
+          "link": "https://github.com/jmgooch/portfolio-s3-website"
         }
       ]
     },
     "contact": {
       "title": "Contact",
-      "description": "I'm am currently open to new opportunitues, so please feel \n to contact me at the links below.",
+      "description": "I'm am currently open to new opportunities, so please feel \n free to contact me at the links below.",
       "linkedin": "https://www.linkedin.com/in/jaime-gooch-b4b75a9b/",
       "github": "https://github.com/jmgooch",
       "email": "%63%6F%6E%74%61%63%74%40%6A%61%69%6D%65%67%6F%6F%63%68%2E%64%65%76"
@@ -73,7 +88,7 @@
   "jp": {
     "ui": {
       "nav_about": "概要",
-      "nav_experience": "経歴",
+      "nav_experience": "職務経歴",
       "nav_projects": "プロジェクト",
       "nav_contact": "連絡先",
       "lang_toggle_text": "EN",
@@ -81,28 +96,79 @@
       "view_project": "プロジェクトを見る"
     },
     "hero": {
-      "title": "こんにちは。",
-      "tagline": "ソフトウェアエンジニア",
+      "title": "ジェイミ グーチ",
+      "tagline": "クラウドインフラストラクチャーエンジニア",
       "image": "../profile.jpg"
     },
     "about": {
       "title": "私について",
-      "content": "日本語のテキストをここに入力します。"
+      "content": "現在、ランスタッドでインフラエンジニアとして勤務しております。京都を拠点に約10年、LinuxシステムエンジニアとしてAWSやGCPでのインフラ構築・管理に携わってきました。このサイトでは、私のTerraformによるインフラプロジェクトの紹介と、連絡先情報をまとめています。"
     },
     "experience": {
-      "title": "職歴",
-      "jobs": []
+      "title": "職務経歴",
+      "jobs": [
+        {
+          "role": "インフラストラクチャーエンジニア",
+          "company": "Randstad",
+          "url": "https://www.randstad.co.jp/",
+          "date": "Mar 2024 - Present",
+          "highlights": [
+            "Handled infrastructure build and configuration for GCP-based Vertex AI PoC Lab.",
+            "Spearheaded cost reduction initiatives in AWS environment to reduce monthly billing by 25%."
+          ]
+        },
+        {
+          "role": "Linuxシステムエンジニア",
+          "company": "JISC",
+          "url": "https://www.jisc.ac.uk/",
+          "date": "August 2019 - August 2022",
+          "highlights": [
+            "Negotiated vendor purchases and contracts on behalf of UK universities.",
+            "Worked with Terraform and Progress Chef to build self-service platform for infra stack deployment."
+          ]
+        },
+        {
+          "role": "3rd Line Support Engineer",
+          "company": "Eagle Eye Solutions",
+          "url": "https://eagleeye.com/",
+          "date": "August 2017 - March 2019",
+          "highlights": [
+            "Built automated monthly reporting extraction from RDS and self-hosted database sources.",
+            "Handled technical remediations and pentest scheduling for companies PCI accreditation."
+          ]
+        },
+        {
+          "role": "IT Security Specialist",
+          "company": "Westpoint Ltd.",
+          "date": "September 2014 - May 2017",
+          "highlights": [
+            "Graduate role in small but skilled team of penetration testing specialists.",
+            "Built a solid foundation in both Linux and security concepts on the whole."
+          ]
+        }
+      ]
     },
     "projects": {
       "title": "プロジェクト",
-      "list": []
+      "list": [
+        {
+          "name": "HA Nginx Fargate Cluster",
+          "description": "シンプルな高可用性Nginx Fargateクラスター用のTerraformコードを含むプロジェクト。",
+          "link": "https://github.com/jmgooch/fargate-nginx-terraform-portfolio-demo"
+        }
+        {
+          "name": "Cloudfront and S3 based website",
+          "description": "このウェブサイト自体のTerraformコード。",
+          "link": "https://github.com/jmgooch/portfolio-s3-website"
+        }
+      ]
     },
     "contact": {
       "title": "お問い合わせ",
-      "description": "日本語のテキスト。",
-      "linkedin": "",
-      "github": "",
-      "email": ""
+      "description": "新しい機会を探しておりますので、以下のリンクからお気軽にご連絡ください。",
+      "linkedin": "https://www.linkedin.com/in/jaime-gooch-b4b75a9b/",
+      "github": "https://github.com/jmgooch",
+      "email": "%63%6F%6E%74%61%63%74%40%6A%61%69%6D%65%67%6F%6F%63%68%2E%64%65%76"
     }
   }
 }

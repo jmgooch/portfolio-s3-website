@@ -1,0 +1,108 @@
+{
+  "en": {
+    "ui": {
+      "nav_about": "About",
+      "nav_experience": "Experience",
+      "nav_projects": "Project Portfolio",
+      "nav_contact": "Contact",
+      "lang_toggle_text": "JP",
+      "lang_toggle_link": "../jp/index.html",
+      "view_project": "View Project"
+    },
+    "hero": {
+      "title": "Jaime Gooch",
+      "tagline": "Cloud Infrastructure Engineer",
+      "image": "../profile.jpg"
+    },
+    "about": {
+      "title": "About Me",
+      "content": "Currently working as an Infrastructure Engineer at Randstad. I am a Linux System Engineer of around 10 years, with experience building and managing infrastructure in AWS and GCP "
+    },
+    "experience": {
+      "title": "Work History",
+      "jobs": [
+        {
+          "role": "Infrastructure Engineer",
+          "company": "Randstad",
+          "url": "https://www.randstad.co.jp/",
+          "date": "Mar 2024 - Present",
+          "highlights": [
+            "Developed and maintained core features of the flagship product.",
+            "Collaborated with design teams to improve user experience and accessibility."
+          ]
+        },
+        {
+          "role": "Linux Systems Engineer",
+          "company": "JISC",
+          "url": "https://www.jisc.ac.uk/",
+          "date": "August 2019 - August 2022",
+          "highlights": [
+            "Developed and maintained core features of the flagship product.",
+            "Collaborated with design teams to improve user experience and accessibility."
+          ]
+        },
+                {
+          "role": "3rd Line Support Engineer",
+          "company": "Eagle Eye Solutions",
+          "url": "https://eagleeye.com/",
+          "date": "August 2017 - March 2019",
+          "highlights": [
+            "TODO"
+          ]
+        }
+      ]
+    },
+    "projects": {
+      "title": "Projects",
+      "list": [
+        {
+          "name": "HA Nginx Fargate Cluster",
+          "description": "A high-performance analytics dashboard built to monitor AWS infrastructure.",
+          "link": "https://github.com/jmgooch/project-one"
+        }
+      ]
+    },
+    "contact": {
+      "title": "Contact",
+      "description": "I'm am currently open to new opportunitues, so please feel \n to contact me at the links below.",
+      "linkedin": "https://www.linkedin.com/in/jaime-gooch-b4b75a9b/",
+      "github": "https://github.com/jmgooch",
+      "email": "%63%6F%6E%74%61%63%74%40%6A%61%69%6D%65%67%6F%6F%63%68%2E%64%65%76"
+    }
+  },
+  "jp": {
+    "ui": {
+      "nav_about": "概要",
+      "nav_experience": "経歴",
+      "nav_projects": "プロジェクト",
+      "nav_contact": "連絡先",
+      "lang_toggle_text": "EN",
+      "lang_toggle_link": "../en/index.html",
+      "view_project": "プロジェクトを見る"
+    },
+    "hero": {
+      "title": "こんにちは。",
+      "tagline": "ソフトウェアエンジニア",
+      "image": "../profile.jpg"
+    },
+    "about": {
+      "title": "私について",
+      "content": "日本語のテキストをここに入力します。"
+    },
+    "experience": {
+      "title": "職歴",
+      "jobs": []
+    },
+    "projects": {
+      "title": "プロジェクト",
+      "list": []
+    },
+    "contact": {
+      "title": "お問い合わせ",
+      "description": "日本語のテキスト。",
+      "linkedin": "",
+      "github": "",
+      "email": ""
+    }
+  }
+}

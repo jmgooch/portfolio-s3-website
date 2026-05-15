@@ -29,7 +29,7 @@ module "cloudfront" {
 
 module "ses_forwarder" {
   source  = "schubergphilis/mcaf-ses-forwarder/aws"
-  version = "~> 0.4.0"
+  version = "1.1.1"
 
   bucket_name        = "${var.domain_name}-email-inbound"
   from_email         = "forwarder@${var.domain_name}" 

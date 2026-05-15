@@ -7,6 +7,10 @@ terraform {
   }
 }
 
+##########
+# Route53 Zone and Records 
+##########
+
 resource "aws_route53_zone" "main" {
   name = var.domain_name
 }
@@ -22,6 +26,10 @@ resource "aws_route53_record" "www" {
     evaluate_target_health = false
   }
 }
+
+##########
+# ACM
+##########
 
 resource "aws_acm_certificate" "cert" {
   provider          = aws.us_east_1
@@ -54,4 +62,28 @@ resource "aws_acm_certificate_validation" "cert" {
   provider = aws.us_east_1
   certificate_arn         = aws_acm_certificate.cert.arn
   validation_record_fqdns = [for record in aws_route53_record.cert_validation : record.fqdn]
+}
+
+##########
+# AWS SES
+##########
+
+resource "aws_ses_domain_identity" "domain" {
+  domain = var.domain_name
+}
+
+resource "aws_route53_record" "ses_verification" {
+  zone_id = aws_route53_zone.main.zone_id
+  name    = "_amazonses.${var.domain_name}"
+  type    = "TXT"
+  ttl     = "600"
+  records = [aws_ses_domain_identity.domain.verification_token]
+}
+
+resource "aws_route53_record" "ses_mx" {
+  zone_id = aws_route53_zone.main.zone_id
+  name    = var.domain_name
+  type    = "MX"
+  ttl     = "600"
+  records = ["10 inbound-smtp.ap-northeast-1.amazonaws.com"]
 }

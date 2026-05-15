@@ -74,12 +74,17 @@
           "name": "Cloudfront and S3 based website",
           "description": "Terraform code for this very website.",
           "link": "https://github.com/jmgooch/portfolio-s3-website"
+        },
+        {
+          "name": "AWS Cost Observability Platform",
+          "description": "Prometheus/Grafana based observability platform for AWS.",
+          "link": "https://github.com/jmgooch/aws-cost-observability-platform"
         }
       ]
     },
     "contact": {
       "title": "Contact",
-      "description": "I'm am currently open to new opportunities, so please feel \n free to contact me at the links below.",
+      "description": "I am currently open to new opportunities, so please feel \n free to contact me at the links below.",
       "linkedin": "https://www.linkedin.com/in/jaime-gooch-b4b75a9b/",
       "github": "https://github.com/jmgooch",
       "email": "%63%6F%6E%74%61%63%74%40%6A%61%69%6D%65%67%6F%6F%63%68%2E%64%65%76"
@@ -102,7 +107,7 @@
     },
     "about": {
       "title": "私について",
-      "content": "現在、ランスタッドでインフラエンジニアとして勤務しております。京都を拠点に約10年、LinuxシステムエンジニアとしてAWSやGCPでのインフラ構築・管理に携わってきました。このサイトでは、私のTerraformによるインフラプロジェクトの紹介と、連絡先情報をまとめています。"
+      "content": "現在、ランスタッドでインフラエンジニアとして勤務しております。3年前から拠点を京都に移し、約10年LinuxシステムエンジニアとしてAWSやGCPでのインフラ構築・管理に携わってきました。このサイトでは、私のTerraformによるインフラプロジェクトの紹介と、連絡先情報をまとめています。"
     },
     "experience": {
       "title": "職務経歴",
@@ -111,39 +116,39 @@
           "role": "インフラストラクチャーエンジニア",
           "company": "Randstad",
           "url": "https://www.randstad.co.jp/",
-          "date": "Mar 2024 - Present",
+          "date": "2024年3月 - 現在",
           "highlights": [
-            "Handled infrastructure build and configuration for GCP-based Vertex AI PoC Lab.",
-            "Spearheaded cost reduction initiatives in AWS environment to reduce monthly billing by 25%."
+            "GCPのVertex AI PoCラボにおいて、インフラの構築、設定、連用を担当しました。",
+            "AWS環境におけるコスト削減の取り組みを主導し、月額費用を25%削減しました。"
           ]
         },
         {
           "role": "Linuxシステムエンジニア",
           "company": "JISC",
           "url": "https://www.jisc.ac.uk/",
-          "date": "August 2019 - August 2022",
+          "date": "2019年8月 - 2022年8月",
           "highlights": [
-            "Negotiated vendor purchases and contracts on behalf of UK universities.",
-            "Worked with Terraform and Progress Chef to build self-service platform for infra stack deployment."
+            "イギリスの大学を代表して、ベンダーからの購入および契約交渉を担当しました。",
+            "TerraformとProgress Chefを活用し、インフラスタックのデプロイを自動化するセルフサービスプラットフォームを構築しました。"
           ]
         },
         {
           "role": "3rd Line Support Engineer",
           "company": "Eagle Eye Solutions",
           "url": "https://eagleeye.com/",
-          "date": "August 2017 - March 2019",
+          "date": "2017年8月 - 2019年3月",
           "highlights": [
-            "Built automated monthly reporting extraction from RDS and self-hosted database sources.",
-            "Handled technical remediations and pentest scheduling for companies PCI accreditation."
+            "RDSとセルフホストのデータベースから、月次レポートの自動抽出機能を構築しました。",
+            "会社のPCI認定に向けた、技術的な脆弱性改修およびペネトレーションテストのスケジュール管理を担当しました。"
           ]
         },
         {
-          "role": "IT Security Specialist",
+          "role": "ITセキュリティスペシャリスト",
           "company": "Westpoint Ltd.",
-          "date": "September 2014 - May 2017",
+          "date": "2014年9月 - 2017年5月",
           "highlights": [
-            "Graduate role in small but skilled team of penetration testing specialists.",
-            "Built a solid foundation in both Linux and security concepts on the whole."
+            "小規模ながら高度なスキルを持つペネトレーションテスト専門チームでの新卒ポジションでした",
+            "Linuxとセキュリティの概念全般について、確固たる基礎を築いました。"
           ]
         }
       ]
@@ -160,12 +165,17 @@
           "name": "Cloudfront and S3 based website",
           "description": "このウェブサイト自体のTerraformコード。",
           "link": "https://github.com/jmgooch/portfolio-s3-website"
+        },
+        {
+          "name": "AWS Cost Observability Platform",
+          "description": "Prometheus/Grafana based observability platform for AWS.",
+          "link": "https://github.com/jmgooch/aws-cost-observability-platform"
         }
       ]
     },
     "contact": {
       "title": "お問い合わせ",
-      "description": "新しい機会を探しておりますので、以下のリンクからお気軽にご連絡ください。",
+      "description": "異なる意見や考えを持つ人とも信頼関係を築きやすいという長所を活かし、チームや事業の成長に貢献していきたいと考えています。ご連絡頂けると幸いです。よろしくお願いいたします。",
       "linkedin": "https://www.linkedin.com/in/jaime-gooch-b4b75a9b/",
       "github": "https://github.com/jmgooch",
       "email": "%63%6F%6E%74%61%63%74%40%6A%61%69%6D%65%67%6F%6F%63%68%2E%64%65%76"

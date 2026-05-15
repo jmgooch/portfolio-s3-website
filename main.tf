@@ -22,3 +22,21 @@ module "cloudfront" {
   s3_bucket_domain_name = module.s3.bucket_regional_domain_name
   oac_id                = module.s3.oac_id
 }
+
+##########
+# SES Lamdba Forwarder community module.
+##########
+
+module "ses_forwarder" {
+  source  = "schubergphilis/mcaf-ses-forwarder/aws"
+  version = "1.1.1"
+
+  bucket_name        = "${var.domain_name}-email-inbound"
+  from_email         = "forwarder@${var.domain_name}" 
+  ses_rule_set_name  = "default"
+  
+  recipient_mapping = {
+    "contact@jaimegooch.dev" = [var.personal_email]
+    "admin@jaimegooch.dev"   = [var.personal_email]
+  }
+}

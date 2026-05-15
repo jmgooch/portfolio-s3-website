@@ -5,10 +5,13 @@ variable "aws_region" {
 
 variable "project_name" {
     type    = string
-    default = "portfolio-s3-website"
 }
 
 variable "domain_name" {
     type    = string
-    default = "jaimegooch.dev" 
+}
+
+variable "personal_email" {
+  type        = string
+  sensitive   = true
 }

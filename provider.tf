@@ -9,7 +9,7 @@ terraform {
   }
 
   backend "s3" {
-    bucket       = "terraform-state-file-bucket-zx9v"
+    bucket       = var.state_bucket_name
     key          = "terraform-portfolio-s3-website.tfstate"
     region       = "ap-northeast-1"
     encrypt      = true

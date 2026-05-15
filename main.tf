@@ -24,22 +24,19 @@ module "cloudfront" {
 }
 
 ##########
-# Cloud Posse SES Lamdba Forwarder community module.
+# SES Lamdba Forwarder community module.
 ##########
 
-module "email_forwarder" {
-  source  = "cloudposse/ses-lambda-forwarder/aws"  
-  version = "0.14.0" 
+module "ses_forwarder" {
+  source  = "schubergphilis/mcaf-ses-forwarder/aws"
+  version = "~> 0.4.0"
 
-  namespace = var.project_name
-  stage     = "prod"
-  name      = "email-forwarder"
-  region    = "ap-northeast-1"
-
-  domain      = var.domain_name
-  relay_email = "contact@${var.domain_name}"
+  bucket_name        = "${var.domain_name}-email-inbound"
+  from_email         = "forwarder@${var.domain_name}" 
+  ses_rule_set_name  = "default"
   
-  forward_emails = {
-    "contact@${var.domain_name}" = [var.personal_email]
+  recipient_mapping = {
+    "contact@jaimegooch.dev" = [var.personal_email]
+    "admin@jaimegooch.dev"   = [var.personal_email]
   }
 }

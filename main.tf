@@ -22,3 +22,24 @@ module "cloudfront" {
   s3_bucket_domain_name = module.s3.bucket_regional_domain_name
   oac_id                = module.s3.oac_id
 }
+
+##########
+# Cloud Posse SES Lamdba Forwarder community module.
+##########
+
+module "email_forwarder" {
+  source  = "cloudposse/ses-lambda-forwarder/aws"  
+  version = "0.14.0" 
+
+  namespace = var.project_name
+  stage     = "prod"
+  name      = "email-forwarder"
+  region    = "ap-northeast-1"
+
+  domain      = var.domain_name
+  relay_email = "contact@${var.domain_name}"
+  
+  forward_emails = {
+    "contact@${var.domain_name}" = [var.personal_email]
+  }
+}

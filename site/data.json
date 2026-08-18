@@ -76,9 +76,9 @@
           "link": "https://github.com/jmgooch/portfolio-s3-website"
         },
         {
-          "name": "AWS Cost Observability Platform",
-          "description": "Prometheus/Grafana based observability platform for AWS.",
-          "link": "https://github.com/jmgooch/aws-cost-observability-platform"
+          "name": "Python Data Collector for Prometheus",
+          "description": "Python metric collector container for use with Prometheus/Grafana.",
+          "link": "https://github.com/jmgooch/python-prometheus-client/"
         }
       ]
     },
@@ -167,9 +167,9 @@
           "link": "https://github.com/jmgooch/portfolio-s3-website"
         },
         {
-          "name": "AWS Cost Observability Platform",
-          "description": "Prometheus/Grafana based observability platform for AWS.",
-          "link": "https://github.com/jmgooch/aws-cost-observability-platform"
+          "name": "Python Data Collector for Prometheus",
+          "description": "Python metric collector container for use with Prometheus/Grafana.",
+          "link": "https://github.com/jmgooch/python-prometheus-client/"
         }
       ]
     },
